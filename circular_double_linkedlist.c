@@ -75,6 +75,7 @@ int main()
 
     print();
     delete();
+    printf("\n");
     print();
     
     return 0;
