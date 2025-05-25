@@ -46,13 +46,13 @@ void insertValue(HashTable* ht, const char* value) {
 
     Node* newNode = (Node*)malloc(sizeof(Node));
     if (newNode == NULL) {
-        perror("Gagal mengalokasikan memori untuk Node baru");
+        perror("Gagal mengalokasikan memori");
         exit(EXIT_FAILURE);
     }
 
     newNode->value = (char*)malloc(strlen(value) + 1);
     if (newNode->value == NULL) {
-        perror("Gagal mengalokasikan memori untuk nama ilmiah");
+        perror("Gagal mengalokasikan memori");
         free(newNode);
         exit(EXIT_FAILURE);
     }
@@ -66,7 +66,7 @@ void insertValue(HashTable* ht, const char* value) {
     } else {
         newNode->next = ht->table[index];
         ht->table[index] = newNode;
-        printf("Kolisi terdeteksi untuk '%s'. Ditambahkan ke rantai di indeks %u.\n", value, index);
+        printf("Terjadi collision. Ditambahkan ke rantai di indeks %u.\n", index);
     }
 }
 
