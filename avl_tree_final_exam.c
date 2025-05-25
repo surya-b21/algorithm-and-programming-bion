@@ -181,13 +181,21 @@ int main() {
     int next_id = 1;
 
     printf("--- Menambahkan Tipe Bangunan ---\n");
+    printf("Menambahkan Bangunan : %s dengan lama pengerjaan %d\n", "Rumah Tipe 36", 120);
     root = insertBuildingType(root, next_id++, "Rumah Tipe 36", 120);
+    printf("Menambahkan Bangunan : %s dengan lama pengerjaan %d\n", "Ruko 2 Lantai", 180);
     root = insertBuildingType(root, next_id++, "Ruko 2 Lantai", 180);
+    printf("Menambahkan Bangunan : %s dengan lama pengerjaan %d\n", "Apartemen Studio", 90);
     root = insertBuildingType(root, next_id++, "Apartemen Studio", 90);
+    printf("Menambahkan Bangunan : %s dengan lama pengerjaan %d\n", "Gudang Kecil", 60);
     root = insertBuildingType(root, next_id++, "Gudang Kecil", 60);
+    printf("Menambahkan Bangunan : %s dengan lama pengerjaan %d\n", "Rumah Tipe 45", 150);
     root = insertBuildingType(root, next_id++, "Rumah Tipe 45", 150);
+    printf("Menambahkan Bangunan : %s dengan lama pengerjaan %d\n", "Kios Komersial", 75);
     root = insertBuildingType(root, next_id++, "Kios Komersial", 75);
+    printf("Menambahkan Bangunan : %s dengan lama pengerjaan %d\n", "Rumah Tipe 70", 200);
     root = insertBuildingType(root, next_id++, "Rumah Tipe 70", 200);
+    printf("Menambahkan Bangunan : %s dengan lama pengerjaan %d\n", "Apartemen 2BR", 130);
     root = insertBuildingType(root, next_id++, "Apartemen 2BR", 130);
 
     printf("\n--- Menampilkan daftar proyek bangunan yang sedang dalam pengerjaan ---\n");
